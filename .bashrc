@@ -108,7 +108,7 @@ fi
 # 10.10.10.100)
 # -----------------------------------------------------------------------------
 
-VMC_CustomHostname='DRUPAL-01.TSMFG.COM'
+VMC_CustomHostname='LAMP-01.SERVERNAME.COM'
 
 export PS1='\n\[\e[31;1m\]CWD\[\e[m\]:\[\e[36;1m\]\w\n\[\e[01;32m\]\t\[\e[m\]:\[\e[01;33m\]\u\[\e[01;33m\]@$VMC_CustomHostname\[\e[01;31m\]\$\[\e[0m\] '
 

@@ -113,7 +113,26 @@ VMC_CustomHostname='DRUPAL-01.TSMFG.COM'
 # Create a customized prompt. Probably not to taste of most Linux geeks, but it
 # makes me happy. :-)
 # -----------------------------------------------------------------------------
-export PS1='\n\[\e[31;1m\]CWD\[\e[m\]:\[\e[36;1m\]\w\n\[\e[01;32m\]\t\[\e[m\]:\[\e[01;33m\]\u\[\e[01;33m\]@$VMC_CustomHostname\[\e[01;31m\]\$\[\e[0m\] '
+# Prompt will look like this:
+#
+# CWD:/etc/bin
+# 10:55:13:user@customservername.com $
+#
+# export PS1='
+#
+#   \n\[\e[01;31m\]CWD\[\e[m\]:\[\e[01;36m\]\w          CWD: Prints Current Working Directory
+#
+#   \n                                                  Newline
+#   
+#   \[\e[01;32m\]\t\[\e[m\]:                            TIME in 24-Hour format
+#
+#   \[\e[01;33m\]\u\[\e[01;33m\]@$VMC_CustomHostname    Username@VMC_CustomHostname
+#
+#   \[\e[01;31m\]\$\[\e[0m\] '                          $ or # prompt, depending on logged in user
+# -----------------------------------------------------------------------------
+# Result:
+# -----------------------------------------------------------------------------
+export PS1='\n\[\e[01;31m\]CWD\[\e[m\]:\[\e[01;36m\]\w\n\[\e[01;32m\]\t\[\e[m\]:\[\e[01;33m\]\u\[\e[01;33m\]@$VMC_CustomHostname\[\e[01;31m\]\$\[\e[0m\] '
 
 # -----------------------------------------------------------------------------
 # Point TERMINFO env variable to the right spot for this install.

@@ -107,12 +107,22 @@ fi
 # name may be similar to other VPC housed hosts on AWS (i.e. everybody is named
 # 10.10.10.100)
 # -----------------------------------------------------------------------------
+VMC_CustomHostname='DRUPAL-01.TSMFG.COM'
 
-VMC_CustomHostname='LAMP-01.SERVERNAME.COM'
-
+# -----------------------------------------------------------------------------
+# Create a customized prompt. Probably not to taste of most Linux geeks, but it
+# makes me happy. :-)
+# -----------------------------------------------------------------------------
 export PS1='\n\[\e[31;1m\]CWD\[\e[m\]:\[\e[36;1m\]\w\n\[\e[01;32m\]\t\[\e[m\]:\[\e[01;33m\]\u\[\e[01;33m\]@$VMC_CustomHostname\[\e[01;31m\]\$\[\e[0m\] '
 
+# -----------------------------------------------------------------------------
+# Point TERMINFO env variable to the right spot for this install.
+# -----------------------------------------------------------------------------
+export TERMINFO=/opt/bitnami/common/lib/terminfo
+
+# -----------------------------------------------------------------------------
 # some more ls aliases
+# -----------------------------------------------------------------------------
 alias ll='ls -lhp'
 alias la='ls -alhp'
 alias l='ls -CF'

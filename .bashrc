@@ -107,7 +107,7 @@ fi
 # name may be similar to other VPC housed hosts on AWS (i.e. everybody is named
 # 10.10.10.100)
 # -----------------------------------------------------------------------------
-VMC_CustomHostname='DRUPAL-01.TSMFG.COM'
+VMC_CustomHostname='CUSTOM.SERVERNAME.COM'
 
 # -----------------------------------------------------------------------------
 # Create a customized prompt. Probably not to taste of most Linux geeks, but it
